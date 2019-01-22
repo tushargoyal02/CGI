@@ -1,0 +1,38 @@
+<html>
+<title>Form</title>
+</head>
+<body>
+<form action="/cgi-bin/diab.py">
+<fieldset width="250">
+<legend>Personal Information</legend>
+Name:<input type="text" name="Name" placeholder="Name" required></br></br>
+Gender:<br><input type="radio" name="Gender" value="Male"/>Male<br>
+       <input type="radio" name="Gender" value="Female"/>Female<br>
+	   <input type="radio" name="Gender" value="Other"/>Other<br>
+Age:<input type="number" name="age"></br></br>
+
+Blood Group:
+<select name="blood">
+i	<option value="A+">A+</option>
+	<option value="O+">O+</option>
+	<option value="B+">B+</option>
+	<option value="AB+">AB+</option>
+	<option value="A-">A-</option>
+	<option value="O-">O-</option>
+	<option value="B-">B-</option>
+	<option value="AB-">AB-</option>
+</select><br><br>
+Symptoms of Diabetes:<br>
+		     BP:<input type="number" name="bp"><br><br>
+		     BMI:<input type="number" name="bmi" type="number" step=".01"><br>
+		     Glucose:<input type="number" name="glu" type="number"><br>
+      		     Pregnancies:<input name="Preg" type="number"><br>
+	             Insulin:<input name="Insu" type="number"><br>
+		     Skin Thickness:<input name="ST" type="number"><br>
+		     Diabetes Pedigree Function<input name="DPF" type="number" step=".001"><br>
+				
+<input type="submit" value="Submit"/><br><br>
+</fieldset>
+</form>	
+</body>
+</html>
